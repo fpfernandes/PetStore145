@@ -1,0 +1,47 @@
+Rest-assured (como comecar com Java)
+
+Duas pastas comuns no universo JAVA (Criar no arquivo):
+
+src (pasta do código fonte) > subpastas: "main" e "test"
+Dentro de ambas pastas "main" e "test" temos as subpastas:
+    - java (para desenvolvimento)
+    - resources (tudo do desenvolvimento que nao é codigo fonte)
+
+Dentro da pasta "test" > "java", criar uma pasta chamada petstore
+Dentro de petstore, criar um arquivo chamado Pet.java (precisa ter letra maiuscula pq no Java isso é o nome de uma classe, classe é mandatório)
+
+
+Criar na pasta PETSTORE145 uma pasta "data" e um arquivo pet.json para colar o json do swagger
+
+Instalacoes e configuracoes
+
+> java -version (checar versao do java no computador)
+> mvn -version (checar  versao de Maven no computador)
+
+Se nao tem java, baixar do site openjdk.org 
+- jdk.java.net/java-se-ri/25 (É um jdk sem instalador que deve ser extraido do zip e criar 
+uma pasta no c>arquivos de programas> java e colar o conteudo)
+
+Se nao tem Maven, baixar o Maven do site 
+- maven.apache.org/download.cgi (Tbm vai baixar zipado, tem que extrair no C:/ e criar 
+pasta apache-maven-3.9.11 e colar o conteudo la)
+
+Depois Precisa alterar a variável de ambiente
+- Botaom iniciar (windows) > var > clicar botao "variaveis de ambiente"
+- Mexer somente no painel de baixo (Variaveis do sistema)
+- Procurar uma linha chamada JAVA_HOME e ver se o path aponta pra versao que vc baixou. Se nao tiver criar um novo
+- Procurar uma linha chamada MAVEN_HOME e ver se o path aponta pra versao que vc baixou. Se nao tiver criar um novo
+- Depois ir na variavel "Path" e editar para referenciar o que foi colocado no JAVA_HOME MAVEN_HOME. Incluir:
+%JAVA_HOME%\bin
+%MAVEN_HOME%\bin
+- Depois reiniciar a maquina
+
+- Depois criar o pom.xml na pasta do VS code e colar estrutura padrao e dependencias
+- para achar as dependencias, ir no site mvnrepository.com> procurar por junit jupiter> versoes>
+clicar na versao e copiar o codigo de dependency do Maven, 
+depois fazer o mesmo com: junit jupiter params,rest-assured, Gson
+
+- Depois instalar extensoes para o Java do vs code
+- Digitar mvn clean no terminal bash
+
+Executar teste: mvn test

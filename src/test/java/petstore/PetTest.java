@@ -1,5 +1,7 @@
 // 1 - Pacote (Grupo de Classes Reunidas)
 package petstore;
+
+// 2 - Imports / Framework e Bibliotecas
 import java.io.IOException;
 import java.nio.file.Files; // Cuida de operações com pastas e arquivos
 import java.nio.file.Paths; // Cuida de direcionar pastas e arquivos
@@ -17,8 +19,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 import com.google.gson.Gson;
- 
-// 2 - Imports / Framework e Bibliotecas
  
 // 3 - Classe
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) // Ativa a ordenacao dos testes 
