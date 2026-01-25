@@ -1,0 +1,5 @@
+id,username,firstName,lastName,email,password,phone,userStatus
+170126,lsimpson,Lisa,Simpson,lsimpson@email.com,Test123456,8896524123,0
+180126,hsimpson,Homer,Simpson,hsimpson@email.com,Test123456,8896524123,0
+190126,msimpson,Marge,Simpson,msimpson@email.com,Test123456,8896524123,0
+200126,mgsimpson,Maggie,Simpson,mgsimpson@email.com,Test123456,8896524123,0

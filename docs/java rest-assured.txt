@@ -45,3 +45,4 @@ depois fazer o mesmo com: junit jupiter params,rest-assured, Gson
 - Digitar mvn clean no terminal bash
 
 Executar teste: mvn test
+mvn -Dtest=TestUserExercicio test
